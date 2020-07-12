@@ -36,3 +36,35 @@ The second column contains the integer, expressed in exactly  digits; if the ori
 
 Answer:
 
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+            Scanner sc=new Scanner(System.in);
+            System.out.println("================================");
+            for(int i=0;i<3;i++){
+                String s1=sc.next();
+                int x=sc.nextInt();
+                //Complete this line
+                int c=s1.length();
+                int z=16-c;
+                System.out.print(s1);
+                for(int j=0;j<z;j++){
+                    System.out.print(" ");
+                }
+                if(x>=100){
+                    System.out.println(x);
+                } else if(x>10 && x<99){
+                    System.out.println("0"+x);
+                } else{
+                    System.out.println("00"+x);
+                }  
+            }
+            System.out.println("================================");
+
+    }
+}
+
+
+
